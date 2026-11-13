@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title description">
+  <title id="title">How the Diabetes Risk Predictor works</title>
+  <desc id="description">Eight health measurements are scaled, passed to a logistic regression model, and shown as a predicted class with confidence.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6f8ff"/>
+      <stop offset="1" stop-color="#edf7f6"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5b5bd6"/>
+      <stop offset="1" stop-color="#258f87"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 30px Arial, sans-serif; fill: #17213a; }
+      .subtitle { font: 16px Arial, sans-serif; fill: #58647c; }
+      .card-title { font: 700 19px Arial, sans-serif; fill: #17213a; }
+      .body { font: 15px Arial, sans-serif; fill: #58647c; }
+      .step { font: 700 14px Arial, sans-serif; fill: #fff; }
+      .arrow { fill: none; stroke: #8b95ad; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="500" rx="26" fill="url(#background)"/>
+  <rect x="0" y="0" width="1200" height="8" rx="4" fill="url(#accent)"/>
+  <text x="54" y="66" class="title">How the Diabetes Risk Predictor works</text>
+  <text x="54" y="98" class="subtitle">A simple, four-step flow from measurements to a model estimate</text>
+
+  <g>
+    <rect x="38" y="145" width="248" height="235" rx="18" fill="#fff" stroke="#dce2f0" stroke-width="2"/>
+    <circle cx="72" cy="184" r="20" fill="#5b5bd6"/>
+    <text x="72" y="189" text-anchor="middle" class="step">01</text>
+    <text x="62" y="235" class="card-title">Enter measurements</text>
+    <text x="62" y="270" class="body">Provide 8 health values:</text>
+    <text x="62" y="296" class="body">glucose, BMI, age, insulin,</text>
+    <text x="62" y="322" class="body">blood pressure, and others.</text>
+    <text x="62" y="354" class="body">The app collects them in order.</text>
+  </g>
+
+  <path d="M296 262h34m-10-10 10 10-10 10" class="arrow"/>
+
+  <g>
+    <rect x="338" y="145" width="248" height="235" rx="18" fill="#fff" stroke="#dce2f0" stroke-width="2"/>
+    <circle cx="372" cy="184" r="20" fill="#4a78c2"/>
+    <text x="372" y="189" text-anchor="middle" class="step">02</text>
+    <text x="362" y="235" class="card-title">Scale the values</text>
+    <text x="362" y="270" class="body">The saved StandardScaler</text>
+    <text x="362" y="296" class="body">puts inputs on the same</text>
+    <text x="362" y="322" class="body">scale used during training.</text>
+    <text x="362" y="354" class="body">This prepares model input.</text>
+  </g>
+
+  <path d="M596 262h34m-10-10 10 10-10 10" class="arrow"/>
+
+  <g>
+    <rect x="638" y="145" width="248" height="235" rx="18" fill="#fff" stroke="#dce2f0" stroke-width="2"/>
+    <circle cx="672" cy="184" r="20" fill="#328b9b"/>
+    <text x="672" y="189" text-anchor="middle" class="step">03</text>
+    <text x="662" y="235" class="card-title">Run the model</text>
+    <text x="662" y="270" class="body">Logistic regression predicts</text>
+    <text x="662" y="296" class="body">a class and estimates the</text>
+    <text x="662" y="322" class="body">probability for each class.</text>
+    <text x="662" y="354" class="body">The app uses the positive-class score.</text>
+  </g>
+
+  <path d="M896 262h34m-10-10 10 10-10 10" class="arrow"/>
+
+  <g>
+    <rect x="938" y="145" width="224" height="235" rx="18" fill="#fff" stroke="#dce2f0" stroke-width="2"/>
+    <circle cx="972" cy="184" r="20" fill="#258f87"/>
+    <text x="972" y="189" text-anchor="middle" class="step">04</text>
+    <text x="962" y="235" class="card-title">View the estimate</text>
+    <text x="962" y="270" class="body">See the predicted class</text>
+    <text x="962" y="296" class="body">and its confidence-style</text>
+    <text x="962" y="322" class="body">probability in the app.</text>
+    <text x="962" y="354" class="body">Not a medical diagnosis.</text>
+  </g>
+
+  <text x="54" y="442" class="subtitle">Educational demonstration only. Predictions are not for clinical or treatment decisions.</text>
+</svg>

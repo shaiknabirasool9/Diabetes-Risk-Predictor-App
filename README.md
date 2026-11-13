@@ -2,6 +2,10 @@
 
 A Streamlit demo that predicts a diabetes label from eight health measurements using a trained logistic-regression model.
 
+## How it works
+
+![Workflow: measurements are scaled, classified, and displayed with a probability estimate](assets/how-it-works.svg)
+
 ## Run locally
 
 From the project root:
