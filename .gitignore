@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local secrets and Streamlit credentials
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# OS/editor files
+Thumbs.db
+.DS_Store
